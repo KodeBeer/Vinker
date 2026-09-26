@@ -5,6 +5,7 @@
 
 
 **What is it?**
+
 This recursive sound instrument is based on Jaap Vink's technique as explained by Kees Tazelaar in the video:
 https://youtu.be/X_Bcr_HS9XM
 
@@ -13,6 +14,7 @@ https://scsynth.org/t/jaap-vink-analogue-unstable-ring-modulated-feedback/8613/2
 
 
 **How to play**
+
 Load this script into the Norns and play it by moving the three encoders
 
 e1= Filter frequency
