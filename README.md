@@ -13,5 +13,7 @@ https://scsynth.org/t/jaap-vink-analogue-unstable-ring-modulated-feedback/8613/2
 Load this script into the Norns and play it by moving the three encoders
 
 e1= Filter frequency
+
 e2= Ring modulator frequency
+
 e3= Delay time
