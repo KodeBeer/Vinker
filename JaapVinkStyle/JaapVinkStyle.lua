@@ -1,3 +1,11 @@
+-- ~An homage to Jaap Vink~
+--
+--
+--     ------------[AMP]-[OUT]
+--     ↓         ↑
+--    [DEL]  [COMPR]
+--       ↓   ↑   ↑
+-- [~]--[RM]-------
 engine.name = "JaapVinkStyle"
 
 function init()
