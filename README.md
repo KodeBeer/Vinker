@@ -9,7 +9,7 @@
 This recursive sound instrument is based on Jaap Vink's technique as explained by Kees Tazelaar in this video:
 https://youtu.be/X_Bcr_HS9XM
 
-It it contains a delay, reverb, ring modulator, compressor and an oscillator 
+It it contains a delay, ring modulator, compressor and an oscillator 
 
 I also took inspiration from the SuperCollider codes in this this topic on the SuperCollider forum: 
 https://scsynth.org/t/jaap-vink-analogue-unstable-ring-modulated-feedback/8613/2
