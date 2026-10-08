@@ -1,7 +1,8 @@
 **Vinker**
 
 
-<img width="4032" height="3024" alt="Vinker" src="https://github.com/user-attachments/assets/aced3b12-557b-44b7-a9b8-f2e43aa62702" />
+<img width="4032" height="3024" alt="Vinker" src="https://github.com/user-attachments/assets/f4b08e1a-953c-484d-80c2-807551055c49" />
+
 
 
 **What is it?**
