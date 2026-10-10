@@ -1,7 +1,7 @@
 **Vinker**
 
 
-<img width="4032" height="3024" alt="Vinker" src="https://github.com/user-attachments/assets/f4b08e1a-953c-484d-80c2-807551055c49" />
+<img width="4032" height="3024" alt="Vinker" src="https://github.com/KodeBeer/Vinker/blob/main/assets/vinker.png" />
 
 
 
