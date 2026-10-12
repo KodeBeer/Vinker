@@ -1,9 +1,6 @@
 **Vinker**
 
-
-<img width="4032" height="3024" alt="Vinker" src="https://github.com/KodeBeer/Vinker/blob/main/assets/vinker.png" />
-
-
+![vinker.png](https://raw.githubusercontent.com/KodeBeer/Vinker/main/assets/vinker.png)
 
 **What is it?**
 
