@@ -1,10 +1,10 @@
-Engine_JaapVinkStyle : CroneEngine {
+Engine_Vinker : CroneEngine {
     var in, snd;
     var ff = 700.0, rmf = 3000.0, delayTime = 1.23, threshold = 0.1, amp = 1.0;
     var params, synth;
 
     alloc {
-        SynthDef(\JaapVinkStyle, { |ff = 700, rmf = 100, delayTime = 1.23, threshold = 0.1, amp = 1.0|
+        SynthDef(\Vinker, { |ff = 700, rmf = 100, delayTime = 1.23, threshold = 0.1, amp = 1.0|
             var in, snd;
 
             in = LocalIn.ar(2);
@@ -81,7 +81,7 @@ Engine_JaapVinkStyle : CroneEngine {
         });
 
         this.addCommand("start", "", {
-            synth = Synth(\JaapVinkStyle, params.getPairs);
+            synth = Synth(\Vinker, params.getPairs);
         });
 
         this.addCommand("stop", "", {

@@ -6,10 +6,10 @@
 --    [DEL]  [COMPR]
 --       ↓   ↑   ↑
 -- [~]--[RM]-------
-engine.name = "JaapVinkStyle"
+engine.name = "Vinker"
 
 function init()
-  print("JaapVinkStyle engine loaded")
+  print("Vinker engine loaded")
 
   redraw()
 
