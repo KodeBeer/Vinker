@@ -4,26 +4,33 @@ Engine_Vinker : CroneEngine {
     var params, synth;
 
     alloc {
-        SynthDef(\Vinker, { |ff = 700, rmf = 100, delayTime = 1.23, threshold = 0.1, amp = 1.0|
-            var in, snd;
+        SynthDef(\Vinker, { |ff = 700, rmf = 100, delayTime = 1.23, threshold = 0.1, amp = 1.0, drive = 2.0|
+            var in, snd, drift;
 
             in = LocalIn.ar(2);
 
+            // slow, independent wander per channel, like analogue parts drifting
+            drift = LFNoise2.kr([0.11, 0.13]).range(0.985, 1.015);
+
+            // LocalIn adds one block, so take it out of the delay
             snd = DelayC.ar(
-                DFM1.ar(in, ff, res: 0.91, noiselevel: 0.001),
+                DFM1.ar(in, ff * drift, res: 0.91, noiselevel: 0.001),
                 5.0,
-                delayTime
+                (delayTime - ControlDur.ir).max(0)
             );
 
-            snd = snd * SinOsc.ar(rmf);
+            snd = snd * SinOsc.ar(rmf * drift.reverse);
+
+            // soft saturation in the loop: unity at low level, rounds off peaks
+            snd = (snd * drive).tanh / drive;
 
             snd = Compander.ar(
                 snd, snd,
                 thresh: threshold,
                 slopeBelow: 1,
                 slopeAbove: 0.1,
-                clampTime: 1.0,
-                relaxTime: 1.0
+                clampTime: 0.01,
+                relaxTime: 0.1
             );
 
             LocalOut.ar(snd);
